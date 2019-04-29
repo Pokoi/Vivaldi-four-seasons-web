@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Entrega CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="general_styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles_waves.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles_snow.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles_text.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script type="text/javascript" src="jss/songmanagement.js"></script>
+</head>
+<body>
+
+  <!-- -------------------------------------------------- 
+  CONTAINER
+  --------------------------------------------------  -->
+
+  <div id="container">
+    
+    <!-- -------------------------------------------------- 
+    MENU 
+    --------------------------------------------------  -->
+
+    <div id="upper_menu">
+
+      <ul id="list_of_buttons">
+        <li> <a href= "index.html"> <div> SUMMER </div></a></li>
+        <li> <a href= "fall.html"> <div> FALL </div></a></li>
+        <li> <a href= "winter.html"> <div> WINTER </div></a></li>
+        <li> <a href= "spring.html"> <div> SPRING </div></a></li>
+      </ul>
+
+    </div>
+
+    <!-- -------------------------------------------------- 
+    CONTAIN
+    --------------------------------------------------  -->
+
+    <div id="content">
+    
+    <div id="waves">
+      <div class="wave" id="wave_1"></div>
+      <div class="wave" id="wave_2"></div>
+      <div class="wave" id="wave_3"></div>
+      <div class="wave" id="wave_4"></div>
+      <div class="wave" id="wave_5"></div>
+    </div>
+
+     <div id="element">
+      <div id="sub_element_1" class="sub_element"></div>
+      <div id="sub_element_2" class="sub_element"></div> 
+      <div id="sub_element_3" class="sub_element"></div> 
+      <div id="sub_element_4" class="sub_element"></div>
+      <div id="sub_element_5" class="sub_element"></div>
+      <div id="sub_element_6" class="sub_element"></div> 
+      <div id="sub_element_7" class="sub_element"></div> 
+      <div id="sub_element_8" class="sub_element"></div>
+      <div id="sub_element_9" class="sub_element"></div>
+      <div id="sub_element_10" class="sub_element"></div> 
+      <div id="sub_element_11" class="sub_element"></div> 
+      <div id="sub_element_12" class="sub_element"></div>
+      <div id="sub_element_13" class="sub_element"></div>
+      <div id="sub_element_14" class="sub_element"></div> 
+      <div id="sub_element_15" class="sub_element"></div> 
+      <div id="sub_element_16" class="sub_element"></div>   
+    </div> 
+
+
+     <div id="text_container">
+      <div id="left_arrow" onclick="changesong(-1, 'winter')"> < </div>
+      <div id="text">
+        <h1> Concerto No. 4 in F Minor, Op.8, "L'inverno"</h1>
+      <h2 id= "movement_name"> I. Allegro ma non molto</h2>
+      <h3> A. Vivaldi</h3>
+      </div>
+      <div id="right_arrow" onclick="changesong(1, 'winter')"> > </div>
+    </div>
+
+    <audio id="music" autoplay loop src="" style="display: none;"></audio>
+
+    </div>
+
+   <!-- -------------------------------------------------- 
+    FOOTER 
+    --------------------------------------------------  -->
+
+    <div id="footer">
+      <p>Made by <a href="http://pokoidev.com/"> Pokoidev </a></p>
+    </div>
+
+
+
+
+  </div>
+    
+    <script>changesong(0, 'winter');</script>
+</body>
+</html>

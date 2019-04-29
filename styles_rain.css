@@ -1,0 +1,252 @@
+
+#element {
+  z-index: 5;
+  position: absolute;
+  width:  100%;
+  height: 100%;
+
+  top: -15%;
+}
+
+.sub_element {
+  position: relative;
+  
+  width: 4px;
+
+  background-color: WhiteSmoke;
+  
+  animation-name: snow_ball;
+  animation-iteration-count: infinite;
+}
+
+#sub_element_1 {
+  
+  margin-left: 15%;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+#sub_element_2 {
+  
+  margin-left: 35%;
+  animation-duration: 1.25s;
+}
+
+#sub_element_3 {
+
+  margin-left: 55%;
+  animation-duration: 1.75s;
+}
+
+#sub_element_4 {
+  
+  margin-left: 75%;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+
+
+#sub_element_5 {
+ 
+  margin-left: 25%;
+  animation-duration: 0.75s;
+}
+
+#sub_element_6 {
+  
+  margin-left: 45%;
+  animation-duration: 0.5s;
+}
+
+#sub_element_7 {
+  
+  margin-left: 65%;
+  animation-duration: 0.25s;
+  animation-delay: 1.5s;
+}
+
+#sub_element_8 {
+  
+  margin-left: 85%;
+  animation-duration: 1s;
+}
+
+#sub_element_9 {
+  
+  margin-left: 7%;
+  animation-duration: 1.25s;
+}
+
+#sub_element_10 {
+  
+  margin-left: 21%;
+  animation-duration: 1.5s;
+}
+
+#sub_element_11 {
+
+  margin-left: 35%;
+  animation-duration: 1.75s;
+  animation-delay: 1.5s;
+}
+
+#sub_element_12 {
+  
+  margin-left: 15%;
+  animation-duration: 0.75s;
+}
+
+#sub_element_13 {
+  
+  margin-left: 55%;
+  animation-duration: 0.5s;
+}
+
+#sub_element_14 {
+  
+  margin-left: 21%;
+  animation-duration: 0.25s;
+}
+
+#sub_element_15 {
+  
+  margin-left: 45%;
+  animation-duration: 2s;
+}
+
+#sub_element_16 {
+  
+  margin-left: 65%;
+  animation-duration: 2s;
+}
+
+#sub_element_1, #sub_element_5, #sub_element_11, #sub_element_13{
+  
+  height: 20px;
+}
+
+#sub_element_2, #sub_element_6, #sub_element_10, #sub_element_14{
+  
+  height: 25px;
+}
+
+#sub_element_3, #sub_element_7, #sub_element_12, #sub_element_15{
+  
+  height: 15px;
+}
+
+#sub_element_4, #sub_element_8, #sub_element_9, #sub_element_16{
+  
+  height: 13px;
+}
+
+
+.spots{
+  z-index: 0;
+  position: absolute;
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out;
+
+  background-image: url("img/spot.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+}
+
+#spot_1, #spot_5, #spot_8{
+
+animation-name: little_spots; 
+}
+
+#spot_2, #spot_6, #spot_4{
+
+animation-name: medium_spots;
+}
+
+#spot_3, #spot_7{
+
+animation-name: large_spots;
+}
+
+
+#spot_1{
+top: 65%;
+left: 10%;
+
+animation-duration: 7s;
+animation-delay: 2s;
+}
+
+#spot_2{
+top: 75%;
+left: 50%;
+
+animation-duration: 6s;
+}
+
+#spot_3{
+top: 70%;
+left: 20%;
+
+animation-duration: 5s;
+}
+
+#spot_4{
+top: 80%;
+left: 35%;
+
+animation-duration: 5.5s;
+animation-delay: 2s;
+}
+
+#spot_5{
+top: 65%;
+left: 15%;
+
+animation-duration: 6.5s;
+}
+
+#spot_6{
+top: 70%;
+left: 60%;
+
+animation-duration: 7.5s;
+}
+
+#spot_7{
+top: 50%;
+left: 70%;
+
+animation-duration: 4s;
+}
+
+#spot_8{
+top: 80%;
+left: 55%;
+
+animation-duration: 4.5s;
+animation-delay: 2s;
+}
+
+
+@keyframes snow_ball{
+      0%{top:     0%;}
+      100%{top: 100%; width:  0px; height:  0px; }
+}
+
+@keyframes little_spots{
+      0%  {width:  0px; height:   0px; opacity: 0;}
+      100%{width:  10px; height: 10px; opacity: 1;}
+}
+
+@keyframes medium_spots{
+      0%  {width:  0px; height:  0px; opacity: 0; }
+      100%{width: 20px; height: 20px; opacity: 1; }
+}
+
+@keyframes large_spots{
+      0%  {width:   0px; height:  0px; opacity: 0; }
+      100%{width:  30px; height: 30px; opacity: 1; }
+}
+

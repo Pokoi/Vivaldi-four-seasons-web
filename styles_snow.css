@@ -1,0 +1,159 @@
+#content {
+  
+  animation-name: snow_floor;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+
+#element {
+  z-index: 5;
+  position: absolute;
+  width:  100%;
+  height: 100%;
+
+  top: -15%;
+}
+
+.sub_element {
+  position: relative;
+  
+  border-radius: 50%;
+  background-color: WhiteSmoke;
+  
+  animation-name: snow_ball;
+  animation-iteration-count: infinite;
+}
+
+#sub_element_1 {
+  
+  margin-left: 15%;
+  animation-duration: 3.75s;
+  animation-delay: 0.5s;
+}
+
+#sub_element_2 {
+  
+  margin-left: 35%;
+  animation-duration: 3.5s;
+}
+
+#sub_element_3 {
+
+  margin-left: 55%;
+  animation-duration: 3.25s;
+}
+
+#sub_element_4 {
+  
+  margin-left: 75%;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+}
+
+
+#sub_element_5 {
+ 
+  margin-left: 25%;
+  animation-duration: 7.25s;
+}
+
+#sub_element_6 {
+  
+  margin-left: 45%;
+  animation-duration: 6.75s;
+}
+
+#sub_element_7 {
+  
+  margin-left: 65%;
+  animation-duration: 6.5s;
+  animation-delay: 1.5s;
+}
+
+#sub_element_8 {
+  
+  margin-left: 85%;
+  animation-duration: 6.25s;
+}
+
+#sub_element_9 {
+  
+  margin-left: 7%;
+  animation-duration: 6s;
+}
+
+#sub_element_10 {
+  
+  margin-left: 21%;
+  animation-duration: 4.25s;
+}
+
+#sub_element_11 {
+
+  margin-left: 35%;
+  animation-duration: 4.5s;
+  animation-delay: 1.5s;
+}
+
+#sub_element_12 {
+  
+  margin-left: 15%;
+  animation-duration: 4.75s;
+}
+
+#sub_element_13 {
+  
+  margin-left: 55%;
+  animation-duration: 5.75s;
+}
+
+#sub_element_14 {
+  
+  margin-left: 21%;
+  animation-duration: 5.5s;
+}
+
+#sub_element_15 {
+  
+  margin-left: 45%;
+  animation-duration: 5.25s;
+}
+
+#sub_element_16 {
+  
+  margin-left: 65%;
+  animation-duration: 5s;
+}
+
+#sub_element_1, #sub_element_5, #sub_element_11, #sub_element_13{
+  width:  20px;
+  height: 20px;
+}
+
+#sub_element_2, #sub_element_6, #sub_element_10, #sub_element_14{
+  width:  25px;
+  height: 25px;
+}
+
+#sub_element_3, #sub_element_7, #sub_element_12, #sub_element_15{
+  width:  15px;
+  height: 15px;
+  }
+
+#sub_element_4, #sub_element_8, #sub_element_9, #sub_element_16{
+  width:  13px;
+  height: 13px;
+}
+
+
+@keyframes snow_ball{
+      0%{top:     0%;}
+      100%{top: 100%; width:  0px; height:  0px; }
+}
+
+@keyframes snow_floor{
+      0%{ background-image: url("img/sand.png"); }
+      100%{background-image: url("img/sand_with_snow.png");}
+}
+
